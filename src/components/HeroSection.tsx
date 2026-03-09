@@ -487,13 +487,13 @@ export default function HeroSection() {
             }}
           />
           <div ref={carInnerRef} className="relative z-10 will-change-transform">
-            <Image
-              src="/car-top-view.png"
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/car-top-view.png`}
               alt="McLaren 720S Top View"
               width={800}
               height={1200}
               className="w-full h-auto drop-shadow-[0_0_80px_rgba(255,100,50,0.15)]"
-              priority
             />
           </div>
         </div>
